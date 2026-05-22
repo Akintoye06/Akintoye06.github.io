@@ -207,14 +207,14 @@
   </div>
   <div class="hero-aside fade-up">
     <div class="hero-stat-grid">
-      <div class="hero-stat"><div class="hero-stat-num">4</div><div class="hero-stat-label">Research Projects</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">5</div><div class="hero-stat-label">Projects</div></div>
       <div class="hero-stat"><div class="hero-stat-num">83%</div><div class="hero-stat-label">Rogue AP Recall</div></div>
       <div class="hero-stat"><div class="hero-stat-num">2,993</div><div class="hero-stat-label">EEG Recordings</div></div>
       <div class="hero-stat"><div class="hero-stat-num">20pp</div><div class="hero-stat-label">Reproducibility Gap</div></div>
     </div>
     <div class="hero-focus">
       <div class="hero-focus-label">Focus Areas</div>
-      <div class="hero-focus-text">Passive WLAN intrusion detection · IoT security &amp; privacy · Biometric authentication · Threat detection tooling · Security policy &amp; compliance</div>
+      <div class="hero-focus-text">Passive WLAN intrusion detection · IoT security &amp; privacy · Biometric authentication · Threat detection tooling · HPC infrastructure · Security policy &amp; compliance</div>
     </div>
   </div>
 </section>
@@ -225,13 +225,101 @@
 <section class="section" id="work">
   <div class="section-header reveal">
     <h2 class="section-title">Selected Work</h2>
-    <span class="section-count">04 projects · 10 artifacts</span>
+    <span class="section-count">05 projects · 14 artifacts</span>
   </div>
 
+  <!-- PROJECT 01 — HPC ADMINISTRATION -->
   <div class="project-cluster reveal reveal-delay-1">
     <div class="cluster-header">
       <div>
-        <div class="cluster-number">Project 01 · Wireless Security</div>
+        <div class="cluster-number">Project 01 · HPC Infrastructure</div>
+        <h3 class="cluster-title">HPC Cluster Administration at UNF</h3>
+        <p class="cluster-desc">End-to-end deployment and administration of a KVM-based OpenHPC cluster at the University of North Florida — from bare-metal provisioning through Open OnDemand portal deployment and GPU metrics collection. Work covers Rocky Linux 9.7 cluster build, Slurm/Munge configuration, NFS infrastructure, systemd service management, and a Telegraf-based GPU monitoring pipeline using NVIDIA tooling. All three projects are fully documented and publicly available on GitHub.</p>
+        <div class="cluster-metrics">
+          <div class="cluster-metric"><div class="cluster-metric-num">3</div><div class="cluster-metric-label">Deployed systems</div></div>
+          <div class="cluster-metric"><div class="cluster-metric-num">20+</div><div class="cluster-metric-label">Documentation artifacts</div></div>
+          <div class="cluster-metric"><div class="cluster-metric-num">2</div><div class="cluster-metric-label">Deployment phases</div></div>
+        </div>
+      </div>
+      <div class="cluster-tags">
+        <span class="tag">OpenHPC</span><span class="tag">Slurm</span><span class="tag">KVM</span><span class="tag">NFS</span><span class="tag">Open OnDemand</span><span class="tag">Telegraf</span><span class="tag">NVIDIA</span><span class="tag">Rocky Linux</span><span class="tag">systemd</span>
+      </div>
+    </div>
+    <div class="artifact-row">
+      <a href="https://github.com/Akintoye06/openhpc" target="_blank" class="artifact-card">
+        <div class="artifact-top"><span class="artifact-format">GitHub Repo</span><span class="artifact-year">2025</span></div>
+        <div class="artifact-title">OpenHPC Cluster</div>
+        <div class="artifact-note">Build guides, network setup, Munge/Slurm configuration, and validation docs for an OpenHPC cluster on Rocky Linux 9.7.</div>
+        <div class="artifact-arrow">View repo →</div>
+      </a>
+      <a href="https://github.com/Akintoye06/open-ondemand" target="_blank" class="artifact-card">
+        <div class="artifact-top"><span class="artifact-format">GitHub Repo</span><span class="artifact-year">2025</span></div>
+        <div class="artifact-title">Open OnDemand Deployment</div>
+        <div class="artifact-note">Full deployment documentation for Open OnDemand on a KVM-based OpenHPC cluster — from Vagrant testbed to production, including NFS and Slurm integration.</div>
+        <div class="artifact-arrow">View repo →</div>
+      </a>
+      <a href="https://github.com/Akintoye06/gpu-monitoring" target="_blank" class="artifact-card">
+        <div class="artifact-top"><span class="artifact-format">GitHub Repo</span><span class="artifact-year">2025</span></div>
+        <div class="artifact-title">GPU Monitoring</div>
+        <div class="artifact-note">Setup guides and architecture for GPU metrics collection on HPC compute nodes using Telegraf and NVIDIA tooling.</div>
+        <div class="artifact-arrow">View repo →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT 02 dark band — EEG -->
+<div class="dark-band">
+  <div style="max-width: var(--max); margin: 0 auto;">
+    <div class="project-cluster cluster-featured reveal">
+      <div class="cluster-header">
+        <div>
+          <div class="cluster-number">Project 02 · Biometric Authentication</div>
+          <h3 class="cluster-title">Benchmarking EEG-Based Authentication at Clinical Scale: A Reproducibility Study</h3>
+          <p class="cluster-desc">A two-dataset reproducibility study evaluating five published deep learning EEG authentication methods on 2,993 clinical recordings from the Temple University Hospital TUABEXB corpus, and replicating Wang et al.'s DE-CNN on the original SEED dataset under subject-disjoint evaluation. Decomposes the reproducibility gap into a 59.77pp protocol effect and a 16.24pp dataset scale effect — the first work to isolate these two contributors at clinical scale. Submitted to Biomedical Signal Processing and Control (Elsevier).</p>
+          <div class="cluster-metrics">
+            <div class="cluster-metric"><div class="cluster-metric-num">83.46%</div><div class="cluster-metric-label">EEGNet accuracy (TUABEXB)</div></div>
+            <div class="cluster-metric"><div class="cluster-metric-num">59.77pp</div><div class="cluster-metric-label">Protocol effect (SEED)</div></div>
+            <div class="cluster-metric"><div class="cluster-metric-num">13–20pp</div><div class="cluster-metric-label">Reproducibility gap</div></div>
+            <div class="cluster-metric"><div class="cluster-metric-num">2,993</div><div class="cluster-metric-label">Clinical recordings</div></div>
+          </div>
+        </div>
+        <div class="cluster-tags">
+          <span class="tag">EEG</span><span class="tag">EEGNet</span><span class="tag">ResNet18</span><span class="tag">CNN-LSTM</span><span class="tag">PyTorch</span><span class="tag">Biometrics</span><span class="tag">TUH Corpus</span><span class="tag">SEED</span><span class="tag">Reproducibility</span>
+        </div>
+      </div>
+      <div class="artifact-row">
+        <a href="papers/eeg-benchmarking.pdf" target="_blank" class="artifact-card">
+          <div class="artifact-top"><span class="artifact-format">Research Paper</span><span class="artifact-year">2026</span></div>
+          <div class="artifact-title">Benchmarking EEG-Based Authentication at Clinical Scale: A Reproducibility Study</div>
+          <div class="artifact-note">Replicates five deep learning EEG authentication methods on TUABEXB and SEED under identical 5-fold subject-disjoint CV. Decomposes the reproducibility gap into protocol and dataset scale effects. Submitted to BSPC (Elsevier).</div>
+          <div class="artifact-arrow">View paper →</div>
+        </a>
+        <a href="https://github.com/Akintoye06/eeg-authentication-reproducibility" target="_blank" class="artifact-card">
+          <div class="artifact-top"><span class="artifact-format">GitHub Repo</span><span class="artifact-year">2026</span></div>
+          <div class="artifact-title">EEG Authentication Reproducibility — Code & Results</div>
+          <div class="artifact-note">Full preprocessing pipeline, model implementations (EEGNet, ResNet18, CNN-LSTM hybrid), 5-fold subject-disjoint CV framework, and result visualization scripts. Enables exact replication.</div>
+          <div class="artifact-arrow">View repo →</div>
+        </a>
+        <a href="papers/eeg-cnn-poster.pdf" target="_blank" class="artifact-card">
+          <div class="artifact-top"><span class="artifact-format">Research Poster</span><span class="artifact-year">2025</span></div>
+          <div class="artifact-title">Deep CNN for Improved EEG Authentication Accuracy</div>
+          <div class="artifact-note">Hybrid EEGNet + ResNet18 + CNN-LSTM architecture for EEG biometric feature extraction, evaluated on TUH EEG corpus with 1D and 2D feature fusion.</div>
+          <div class="artifact-arrow">View poster →</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <hr class="cluster-rule" style="margin-top:0; margin-bottom: 3.5rem;">
+
+  <!-- PROJECT 03 — ROGUE AP -->
+  <div class="project-cluster reveal reveal-delay-1">
+    <div class="cluster-header">
+      <div>
+        <div class="cluster-number">Project 03 · Wireless Security</div>
         <h3 class="cluster-title">Beacon Frame Analysis for Passive Rogue AP Detection</h3>
         <p class="cluster-desc">A passive, client-agnostic detection pipeline analyzing IEEE 802.11 Layer 2 management frames to distinguish legitimate APs from evil-twin rogue devices — without active probing or client-side instrumentation. Includes supervised ML classifiers, a rule-based CLI detection script, and qualitative analysis of MAC randomization and SSID cloaking failure modes.</p>
         <div class="cluster-metrics">
@@ -268,10 +356,11 @@
 
   <hr class="cluster-rule">
 
+  <!-- PROJECT 04 — PPG -->
   <div class="project-cluster reveal reveal-delay-1">
     <div class="cluster-header">
       <div>
-        <div class="cluster-number">Project 02 · IoT Security &amp; Policy</div>
+        <div class="cluster-number">Project 04 · IoT Security &amp; Policy</div>
         <h3 class="cluster-title">Measurement Bias in Wearable PPG Sensors</h3>
         <p class="cluster-desc">A comprehensive literature review tracing the causal chain from PPG sensor optical physics through AI training pipelines to clinical harm and regulatory failure. Argues that algorithmic sophistication cannot compensate for a signal never accurately captured, and proposes five targeted policy recommendations spanning the FDA, EU AI Act, and NIH.</p>
         <div class="cluster-metrics">
@@ -307,49 +396,13 @@
   </div>
 </section>
 
-<!-- PROJECT 03 dark band -->
-<div class="dark-band">
-  <div style="max-width: var(--max); margin: 0 auto;">
-    <div class="project-cluster cluster-featured reveal">
-      <div class="cluster-header">
-        <div>
-          <div class="cluster-number">Project 03 · Biometric Authentication</div>
-          <h3 class="cluster-title">EEG-Based Biometric Authentication at Clinical Scale</h3>
-          <p class="cluster-desc">A reproducibility study evaluating five published EEG authentication methods on 2,993 clinical recordings from the Temple University Hospital TUABEXB corpus — the first work to quantify the reproducibility gap between small-dataset lab results and clinical-scale evaluation. Companion work built and evaluated a hybrid Deep CNN architecture for EEG feature extraction.</p>
-          <div class="cluster-metrics">
-            <div class="cluster-metric"><div class="cluster-metric-num">83.5%</div><div class="cluster-metric-label">EEGNet accuracy</div></div>
-            <div class="cluster-metric"><div class="cluster-metric-num">13–20pp</div><div class="cluster-metric-label">Reproducibility gap</div></div>
-            <div class="cluster-metric"><div class="cluster-metric-num">2,993</div><div class="cluster-metric-label">Clinical recordings</div></div>
-          </div>
-        </div>
-        <div class="cluster-tags">
-          <span class="tag">EEG</span><span class="tag">EEGNet</span><span class="tag">ResNet18</span><span class="tag">CNN-LSTM</span><span class="tag">PyTorch</span><span class="tag">Biometrics</span><span class="tag">TUH Corpus</span>
-        </div>
-      </div>
-      <div class="artifact-row">
-        <a href="papers/eeg-benchmarking.pdf" target="_blank" class="artifact-card">
-          <div class="artifact-top"><span class="artifact-format">Research Paper</span><span class="artifact-year">2025</span></div>
-          <div class="artifact-title">Benchmarking EEG-Based Authentication at Clinical Scale: A Reproducibility Study on 2,993 Recordings</div>
-          <div class="artifact-note">Replicates five published EEG authentication methods under identical 5-fold subject-disjoint CV conditions. Quantifies 13–20pp accuracy drops. Establishes first standardized clinical-scale benchmark.</div>
-          <div class="artifact-arrow">View paper →</div>
-        </a>
-        <a href="papers/eeg-cnn-poster.pdf" target="_blank" class="artifact-card">
-          <div class="artifact-top"><span class="artifact-format">Research Poster</span><span class="artifact-year">2025</span></div>
-          <div class="artifact-title">Deep CNN for Improved EEG Authentication Accuracy</div>
-          <div class="artifact-note">Hybrid EEGNet + ResNet18 + CNN-LSTM architecture for EEG biometric feature extraction, evaluated on TUH EEG corpus with 1D and 2D feature fusion.</div>
-          <div class="artifact-arrow">View poster →</div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
+<!-- PROJECT 05 — RANSOMWARE -->
 <section class="section">
   <hr class="cluster-rule" style="margin-top:0; margin-bottom: 3.5rem;">
   <div class="project-cluster reveal">
     <div class="cluster-header">
       <div>
-        <div class="cluster-number">Project 04 · Security Economics</div>
+        <div class="cluster-number">Project 05 · Security Economics</div>
         <h3 class="cluster-title">Dynamic Value Asymmetry in Ransomware Negotiation Models</h3>
         <p class="cluster-desc">A game-theoretic analysis of the Vakilinia et al. smart contract-based ransomware negotiation framework. Identifies two unaddressed modeling gaps — value asymmetry when attacker minimums exceed victim Shapley values, and static treatment of a dynamically depreciating victim valuation — and proposes a dynamically parameterized mechanism with Chainlink Automation integration.</p>
       </div>
@@ -381,9 +434,7 @@
           <p>I'm <strong>Akintoye Oyedola</strong>, a cybersecurity professional specializing in wireless network security, IoT systems, and security policy. My work sits at the intersection of hands-on technical execution and rigorous analysis — equally comfortable writing a Scapy parser in monitor mode and tracing a regulatory gap across three jurisdictions.</p>
           <p style="margin-top:1.25rem;">My project work spans passive rogue AP detection (802.11 management frame analysis, Random Forest and SVM classifiers on live packet captures), IoT health equity (PPG sensor bias policy analysis across FDA and EU AI Act frameworks), EEG biometric authentication (clinical-scale reproducibility benchmarking on 2,993 hospital recordings), and ransomware negotiation (game-theoretic mechanism design with smart contract integration).</p>
           <p style="margin-top:1.25rem;">I bring research-grade rigor to practical security problems, with a focus on findings that are technically sound and actionable for real-world deployment.</p>
-          <p style="margin-top:1.25rem;">Beyond research, I serve as an HPC Systems Administrator at UNF's School of Computing, deploying and maintaining a KVM-based OpenHPC cluster running Rocky Linux 9.7. Work spans cluster provisioning, Slurm/Munge configuration, NFS infrastructure, Open OnDemand portal deployment, and GPU metrics pipelines using Telegraf and NVIDIA tooling. High-level documentation with reproducibility as the standard.</p>
-        </div>
-      </div>
+          <p style="margin-top:1.25rem;">Beyond research, I serve as an HPC Systems Administrator at UNF's School of Computing — deploying and maintaining a KVM-based OpenHPC cluster running Rocky Linux 9.7. Work spans cluster provisioning, Slurm/Munge configuration, NFS infrastructure, Open OnDemand portal deployment, and GPU metrics pipelines using Telegraf and NVIDIA tooling. I document everything — from boot error fixes to full deployment guides — with reproducibility as the standard.</p>
         </div>
       </div>
 
@@ -414,6 +465,7 @@
         <li class="skill-item"><span class="skill-name">Python / Scapy / scikit-learn</span><span class="skill-area">Engineering</span></li>
         <li class="skill-item"><span class="skill-name">Deep Learning (PyTorch, EEGNet, ResNet)</span><span class="skill-area">Research</span></li>
         <li class="skill-item"><span class="skill-name">Network Packet Analysis</span><span class="skill-area">Engineering</span></li>
+        <li class="skill-item"><span class="skill-name">OpenHPC / Slurm / KVM</span><span class="skill-area">Infrastructure</span></li>
         <li class="skill-item"><span class="skill-name">IoT Security &amp; Privacy</span><span class="skill-area">Research</span></li>
         <li class="skill-item"><span class="skill-name">Game Theory &amp; Mechanism Design</span><span class="skill-area">Analysis</span></li>
         <li class="skill-item"><span class="skill-name">Regulatory &amp; Policy Analysis</span><span class="skill-area">Analysis</span></li>
@@ -469,7 +521,7 @@
 </footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-// ── SCROLL REVEAL ──
+// SCROLL REVEAL
 const revealEls = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -481,7 +533,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 revealEls.forEach(el => observer.observe(el));
 
-// ── TERMINAL GAME ──
+// TERMINAL
 const commands = {
   help: () => [
     { cls: 'comment', text: '# Available commands:' },
@@ -584,7 +636,7 @@ input.addEventListener('keydown', function(e) {
   }
 });
 
-// ── CONTACT FORM ──
+// CONTACT FORM
 const form = document.getElementById('contact-form');
 const success = document.getElementById('form-success');
 if (form) {
